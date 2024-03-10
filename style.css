@@ -1,0 +1,490 @@
+/*
+Theme Name: Twenty Twenty-Four
+Theme URI: https://wordpress.org/themes/twentytwentyfour/
+Author: the WordPress team
+Author URI: https://wordpress.org
+Description: Twenty Twenty-Four is designed to be flexible, versatile and applicable to any website. Its collection of templates and patterns tailor to different needs, such as presenting a business, blogging and writing or showcasing work. A multitude of possibilities open up with just a few adjustments to color and typography. Twenty Twenty-Four comes with style variations and full page designs to help speed up the site building process, is fully compatible with the site editor, and takes advantage of new design tools introduced in WordPress 6.4.
+Requires at least: 6.4
+Tested up to: 6.4
+Requires PHP: 7.0
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwentyfour
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
+*/
+.custom_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.custom_form .custom_form_input{
+    height: 64px;
+    width: 100%;
+    padding: 10px 20px;
+    border: 2px solid #FCC419;
+    outline: none;
+}
+.custom_form .custom_form_button{
+    padding: 10px 35px;
+    height: 64px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    background-color: #FCC419;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    color: #ffffff;
+}
+.site-scan-result{
+
+}
+.site-scan-result .site-scan-result-title{
+    margin: 0;
+    font-family: Titillium Web, Helvetica, Arial, Tahoma, sans-serif;
+    font-weight: 700;
+    line-height: 1 !important;
+    font-size: 1.25rem;
+    color: #000000;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.site-scan-result .site-scan-result-title a span{
+    height: 32px;
+    width: 32px;
+    border-radius: 100%;
+    background-color: #FCC419;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.site-scan-result .scan-result-wrapper{
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+/* Result Heading Part */
+.site-scan-result .scan-result-wrapper .result-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.site-scan-result .scan-result-wrapper .result-heading .heading-content-inner{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.heading-content{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.heading-content.style-2{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.heading-content.style-2 .desc{
+    margin-bottom: 16px !important;
+}
+.heading-content.style-2 .button{
+    padding: 5px 10px;
+    color: #ffffff;
+    font-size: .875rem;
+    border-radius: 100px;
+}
+.heading-content.style-2 .button.style-1{
+    background-color: #FCC419;
+}
+.heading-content.style-2 .button.style-2{
+    background-color: #008673;
+}
+.scan-icon{
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.scan-icon span{
+    font-size: 26px;
+    height: auto !important;
+    width: auto !important;
+    color: #ffffff;
+}
+.scan-icon.error{
+    background-color: #FCC419;
+}
+.scan-icon.safe{
+    background-color: #008673;
+}
+.heading-content .content .title{
+    margin: 0;
+    font-family: Titillium Web, Helvetica, Arial, Tahoma, sans-serif;
+    font-weight: 700;
+    line-height: 1 !important;
+    font-size: 1.25rem;
+
+}
+.heading-content .content .desc{
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: Titillium Web, Helvetica, Arial, Tahoma, sans-serif;
+    font-weight: 400;
+}
+.site-scan-result .result-heading-button{
+    padding: 12px 16px;
+    background-color: #FCC419;
+    border-radius: 100px;
+    color: #ffffff;
+}
+
+/* Result Heading Part */
+.site-scan-result .scan-result-wrapper .result-box{
+    margin-top: 60px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-scan-result .scan-result-wrapper .result-box .result-url{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.site-scan-result .scan-result-wrapper .result-box .result-url .icon span{
+ font-size: 32px;
+ color: #FCC419;
+}
+.site-scan-result .scan-result-wrapper .result-box .result-url .result-url-content .title{
+    margin: 0;
+    font-family: Titillium Web, Helvetica, Arial, Tahoma, sans-serif;
+    font-weight: 700;
+    line-height: 1 !important;
+    font-size: 1rem;
+}
+.site-scan-result .scan-result-wrapper .result-box .result-url .result-url-content .url{
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: Titillium Web, Helvetica, Arial, Tahoma, sans-serif;
+    font-weight: 400;
+    margin-top: 12px;
+}
+.site-scan-result .scan-result-wrapper .result-box .divider{
+    width: 1px;
+    background-color: #000000;
+    height: 100px;
+}
+.site-scan-result .scan-result-wrapper .result-box .result-all{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+.site-scan-result .scan-result-wrapper .result-box .result-all .result-content{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.site-scan-result .scan-result-wrapper .result-box .result-all .result-content .single-content{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.site-scan-result .scan-result-wrapper .result-box .result-all .result-content .single-content .label{
+    font-family: Titillium Web, Helvetica, Arial, Tahoma, sans-serif;
+    font-weight: 700;
+    line-height: 1 !important;
+    font-size: 1rem;
+}
+.site-scan-result .scan-result-wrapper .result-box .result-all .result-content .single-content{
+    font-family: Titillium Web, Helvetica, Arial, Tahoma, sans-serif;
+    font-weight: 400;
+    line-height: 1 !important;
+    font-size: 1rem;
+}
+
+/* Progressbar */
+.result-rating-bar{
+    margin-top: 60px;
+}
+.result-rating-bar .yprogress-bar {
+    list-style: none;
+    height: 6px;
+    background: #ccc;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.result-rating-bar .yprogress-bar .step {
+    display: inline-block;
+    margin-right: 70px;
+    text-align: center;
+    margin-top: -14.5px;
+    box-sizing: border-box;
+} 
+.result-rating-bar .yprogress-bar .step.current .number {
+    background: #696969;
+    color: #fff;
+} 
+.result-rating-bar .yprogress-bar .step .number {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: #ddd;
+    line-height: 29px;
+    border-radius: 50%;
+    margin: auto;
+    border: 3px solid #c9c9c9;
+    box-sizing: border-box;
+} 
+.result-rating-bar .yprogress-bar.theme-blue {
+   
+}
+.result-rating-bar .yprogress-bar.theme-blue .step.error .number {
+    background: #FCC419;
+    color: #fff;
+    border-color: #FCC419 !important;
+} 
+.result-rating-bar .yprogress-bar.theme-blue .step.safe .number {
+    background: #008673;
+    border-color: #008673 !important;
+    color: #fff;
+} 
+.result-rating-bar .yprogress-bar.theme-blue .step .number {
+    border-color: #ccc;
+    background: #fff;
+    font-weight: bold;
+    color: #ccc;
+}
+.result-rating-bar .yprogress-bar .step:first-child {
+    margin-left: -15px;
+}
+.result-rating-bar .yprogress-bar .step:last-child {
+    margin-right: -17px;
+}
+
+/* Result Content */
+.site-scan-result .result-issue-content{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+}
+.site-scan-result .result-issue-content .single-issue-item{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.site-scan-result .result-issue-content .single-issue-item:last-child{
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.site-scan-result .result-issue-content .single-issue-item .title{
+    margin: 0;
+    font-family: Titillium Web, Helvetica, Arial, Tahoma, sans-serif;
+    font-weight: 700;
+    line-height: 1.25 !important;
+    font-size: 1rem;
+    padding: 10px 15px;
+    background-color: #FCC419;
+    border-radius: 5px;
+    color: #ffffff;
+    width: 200px;
+    margin-bottom: 10px;
+}
+.site-scan-result .result-issue-content .single-issue-item .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-scan-result .result-issue-content .single-issue-item .content .url{
+    font-family: Titillium Web, Helvetica, Arial, Tahoma, sans-serif;
+    font-weight: 700;
+    line-height: 1 !important;
+    font-size: 1rem;
+    color: #000000;
+}
+.site-scan-result .result-issue-content .single-issue-item .content .info-url{
+    color: #008673;
+}
+
+/* Result Notice */
+.result-notice{
+    margin-top: 100px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    border-left: 15px solid #FCC419;
+}
+.result-notice.safe{
+    border-left: 15px solid #008673 !important;
+}
+
+/* Malware & Security */
+.site-scan-result .malware-security-blacklist-status{
+    display: flex;
+    gap: 50px;
+    align-items: start;
+    margin-top: 50px;
+}
+.site-scan-result .malware-security-blacklist-status .malware-security-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 50%;
+
+}
+.site-scan-result .malware-security-blacklist-status .malware-security-wrapper .malware-security-top-area{
+    padding: 30px 40px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 100%;
+}
+.site-scan-result .malware-security-blacklist-status .malware-security-wrapper .malware-security-top-area .title, .blacklist-status-wrapper .title{
+    margin: 0;
+    font-family: Titillium Web, Helvetica, Arial, Tahoma, sans-serif;
+    font-weight: 700;
+    line-height: 1 !important;
+    font-size: 1.25rem;
+}
+.site-scan-result .malware-security-blacklist-status .malware-security-wrapper .malware-security-top-area .checkmark, .blacklist-status-wrapper .checkmark{
+    margin: 25px 0;
+    padding: 0;
+}
+.site-scan-result .malware-security-blacklist-status .malware-security-wrapper .malware-security-top-area .checkmark li, .blacklist-status-wrapper .checkmark li{
+    font-size: 16px;
+	margin-bottom: .4em;
+	list-style-type: none;
+	padding: .25em 0 0 2.5em;
+	position: relative;
+}
+.site-scan-result .malware-security-blacklist-status .malware-security-wrapper .malware-security-top-area .checkmark li:before, .blacklist-status-wrapper .checkmark li:before{
+    content: " ";
+	display: block;
+	border: solid .8em #008673;
+	border-radius: .8em;
+	height: 0;
+	width: 0;
+	position: absolute;
+	left: .5em;
+	top: 40%;
+	margin-top: -.5em;
+}
+.site-scan-result .malware-security-blacklist-status .malware-security-wrapper .malware-security-top-area .checkmark li:after, .blacklist-status-wrapper .checkmark li:after{
+    content: " ";
+	display: block;
+	width: .5em;
+	height: .8em;
+	border: solid #fff;
+	border-width: 0 .2em .2em 0;
+	position: absolute;
+	left: 1em;
+	top: 40%;
+	margin-top: -.2em;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.site-scan-result .malware-security-blacklist-status .malware-security-wrapper .malware-security-top-area .result-heading-button a{
+    margin-top: 10px;
+}
+.site-scan-result .malware-security-blacklist-status .malware-security-wrapper .malware-security-bottom-area{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    width: 100%;
+
+}
+.site-scan-result .malware-security-blacklist-status .malware-security-wrapper .malware-security-bottom-area .single-item{
+    padding: 30px 40px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 100%;
+}
+.site-scan-result .malware-security-blacklist-status .blacklist-status-wrapper{
+    padding: 30px 40px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 50%;
+}
+
+
+/* Hardening Improvements */
+.site-scan-result .hardening-improvements{
+    margin-top: 50px;
+    padding: 50px 40px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+.site-scan-result .hardening-improvements .title{
+    margin: 0;
+    font-family: Titillium Web, Helvetica, Arial, Tahoma, sans-serif;
+    font-weight: 700;
+    line-height: 1 !important;
+    font-size: 1.25rem;
+}
+.hardening-improvements .result-notice{
+    margin-top: 30px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.hardening-improvements .result-notice .title{
+    font-family: Titillium Web, Helvetica, Arial, Tahoma, sans-serif;
+    font-weight: 700;
+    line-height: 1 !important;
+    font-size: 1rem;
+}
+
+.li-issue:before{
+    border-color: #FCC419 !important;
+}
+.li-issue:after{
+    content: " ";
+    display: block;
+    width: 0.5em !important;
+    height: 0.8em !important;
+    border: solid #fff;
+    border-width: 0 0.2em 0.2em 0 !important;
+    position: absolute !important;
+    left: 1em;
+    top: 40%;
+    margin-top: -0.2em !important;
+    -webkit-transform: rotate(45deg) !important;
+    -moz-transform: rotate(45deg) !important;
+    -o-transform: rotate(45deg) !important;
+    transform: rotate(45deg) !important;
+}
+.li-issue-text{
+    color: #FCC419;
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 50px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
