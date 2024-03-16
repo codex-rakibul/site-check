@@ -11,6 +11,12 @@
 /**
  * Register block styles.
  */
+function twentytwentyfour_enqueue_scripts() {
+    // Register and enqueue jQuery from CDN
+    wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.6.4.min.js', array(), '3.6.4', true);
+
+}
+add_action('wp_enqueue_scripts', 'twentytwentyfour_enqueue_scripts');
 
 if ( ! function_exists( 'twentytwentyfour_block_styles' ) ) :
 	/**
@@ -208,7 +214,6 @@ add_action( 'init', 'twentytwentyfour_pattern_categories' );
 require_once 'elementor/widget.php';
 
 //
-$url = isset($_GET['url']) ? urldecode($_GET['url']) : '';
 
 if (!function_exists('custom_form_shortcode')) {
     /**
@@ -229,10 +234,11 @@ if (!function_exists('custom_form_shortcode')) {
         // Output the form HTML
         ob_start();
         ?>
-        <form action="" method="GET" class="custom_form">
-            <input class="custom_form_input" type="url" name="url" id="custom_input" required>
+        <form action="" method="GET"  class="custom_form">
+            <input class="custom_form_input" type="text" name="url" id="custom_input" required>
             <input class="custom_form_button" type="submit" value="Scan Website">
         </form>
+		
         <?php
 
        
@@ -243,6 +249,12 @@ if (!function_exists('custom_form_shortcode')) {
 
 // Register the shortcode
 add_shortcode('custom_form', 'custom_form_shortcode');
+
+
+function twenty_twenty_four_enqueue_scripts() {
+	wp_enqueue_script('preloader-script', get_template_directory_uri() . '/js/custom.js', array('jquery'), '1.0', true);
+}
+add_action('wp_enqueue_scripts', 'twenty_twenty_four_enqueue_scripts');
 
 
 
